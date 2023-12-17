@@ -1,4 +1,7 @@
 Instance: ejemplo1
+Title: "Ejemplo Paciente"
+Description: "Ejemplo Paciente"
+
 InstanceOf: Patient
 Usage: #example
 * meta.profile = "http://example.org/StructureDefinition/Paciente"

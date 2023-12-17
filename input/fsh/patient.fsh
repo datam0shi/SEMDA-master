@@ -4,10 +4,10 @@ Description: "Paciente"
 * identifier 1..1 MS
   * ^short = "ID Paciente"
   * ^definition = "Indentificador único del paciente" 
-    * use ^short = "codigo de tipo de id"
+    * use ^short = "Código de tipo de ID"
     * use from http://hl7.org/fhir/ValueSet/identifier-use (required)
     * use = #official
-    * value ^short = "Valor del run sin puntos y con guión"
+    * value ^short = "Valor del RUN sin puntos y con guión"
     * value 1..1 MS
 
 * name 1..1 MS
@@ -17,12 +17,12 @@ Description: "Paciente"
     * ^short = "1er Apellido"
     * ^definition = "1er Apellido del paciente"
   * use 1..1 MS
-  * use ^short = "tipo de nombre"
+  * use ^short = "Tipo de nombre"
   * use from http://hl7.org/fhir/ValueSet/name-use (required)
   * use = #official
   * given 1..*
-    * ^short = "Nombre/ spaciente"
-    * ^definition = "Nombre/s paciente"
+    * ^short = "Nombre/s del paciente"
+    * ^definition = "Nombre/s del paciente"
 * name.extension contains ApellidoMaterno named ApellidoMaterno 0..1 
   * ^short = "Apellido materno"
   * ^definition = "Apellido materno"

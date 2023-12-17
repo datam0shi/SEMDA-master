@@ -25,7 +25,7 @@ Usage: #example
 * item[=].item[0].type = #group
 * item[=].item[=].required = true
 * item[=].item[=].linkId = "datosGenerales"
-* item[=].item[=].text = "Datos Generales Atención Psicológica"
+* item[=].item[=].text = "Datos Generales Atención Médica"
  // Fechas //
 * item[=].item[0].item[0].type = #date
 * item[=].item[=].item[=].required = true
@@ -60,7 +60,7 @@ Usage: #example
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].repeats = true
 * item[=].item[=].item[=].linkId = "motivoConsulta"
-* item[=].item[=].item[=].text = "Motivo consulta"
+* item[=].item[=].item[=].text = "Motivo Consulta"
 
 * item[=].item[1].item[+].type = #string
 * item[=].item[=].item[=].required = true
@@ -90,7 +90,7 @@ Usage: #example
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].repeats = true
 * item[=].item[=].item[=].linkId = "historialVacunacion"
-* item[=].item[=].item[=].text = "Historial de vacunación" 
+* item[=].item[=].item[=].text = "Historial de Vacunación" 
 
 
 //  DATOS EXAMEN FÍSICO // CAMBIAR STRING POR DATOS NUMERICOS
@@ -105,7 +105,7 @@ Usage: #example
 * item[=].item[=].item[=].linkId = "peso"
 * item[=].item[=].item[=].text = "Peso"
 
-* item[=].item[2].item[=].item[0].type = #quantity
+* item[=].item[2].item[=].item[0].type = #decimal
 * item[=].item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].item[=].linkId = "valorPeso"
 * item[=].item[=].item[=].item[=].text = "Valor de Peso"
@@ -121,7 +121,7 @@ Usage: #example
 * item[=].item[=].item[=].linkId = "altura"
 * item[=].item[=].item[=].text = "Altura"
 
-* item[=].item[2].item[=].item[0].type = #quantity
+* item[=].item[2].item[=].item[0].type = #decimal
 * item[=].item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].item[=].linkId = "valorAltura"
 * item[=].item[=].item[=].item[=].text = "Valor de Altura"
@@ -137,12 +137,12 @@ Usage: #example
 * item[=].item[=].item[=].linkId = "presionArterial"
 * item[=].item[=].item[=].text = "Presión Arterial"
 
-* item[=].item[2].item[=].item[0].type = #quantity
+* item[=].item[2].item[=].item[0].type = #decimal
 * item[=].item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].item[=].linkId = "valorPresionSistolica"
 * item[=].item[=].item[=].item[=].text = "Valor de Presión Arterial Sistólica"
 
-* item[=].item[2].item[=].item[+].type = #quantity
+* item[=].item[2].item[=].item[+].type = #decimal
 * item[=].item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].item[=].linkId = "valorPresionDiastolica"
 * item[=].item[=].item[=].item[=].text = "Valor de Presión Arterial Diastolica"
@@ -158,7 +158,7 @@ Usage: #example
 * item[=].item[=].item[=].linkId = "temperatura"
 * item[=].item[=].item[=].text = "Temperatura"
 
-* item[=].item[2].item[=].item[0].type = #quantity
+* item[=].item[2].item[=].item[0].type = #decimal
 * item[=].item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].item[=].linkId = "valorTemperatura"
 * item[=].item[=].item[=].item[=].text = "Valor de Temperatura"
@@ -174,7 +174,7 @@ Usage: #example
 * item[=].item[=].item[=].linkId = "frecuenciaRespiratoria"
 * item[=].item[=].item[=].text = "Frecuencia Respiratoria"
 
-* item[=].item[2].item[=].item[0].type = #quantity
+* item[=].item[2].item[=].item[0].type = #decimal
 * item[=].item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].item[=].linkId = "valorFrecuenciaRespiratoria"
 * item[=].item[=].item[=].item[=].text = "Valor de Frecuencia Respiratoria"
@@ -188,7 +188,7 @@ Usage: #example
 * item[=].item[=].item[=].linkId = "frecuenciaCardiaca"
 * item[=].item[=].item[=].text = "Frecuencia Cardiaca"
 
-* item[=].item[2].item[=].item[0].type = #quantity
+* item[=].item[2].item[=].item[0].type = #decimal
 * item[=].item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].item[=].linkId = "valorFrecuenciaCardiaca"
 * item[=].item[=].item[=].item[=].text = "Valor de Frecuencia Cardiaca"
@@ -237,20 +237,20 @@ Usage: #example
 * item[=].item[=].item[=].linkId = "medicamentos"
 * item[=].item[=].item[=].text = "Medicamentos"
 
-* item[=].item[=].item[+].type = #quantity
+* item[=].item[=].item[+].type = #string
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "dosisMedicamento"
-* item[=].item[=].item[=].text = "Dosis"
+* item[=].item[=].item[=].text = "Dosis del Medicamento"
 
-* item[=].item[=].item[+].type = #quantity // REVISAR TIPO DE DATO 
+* item[=].item[=].item[+].type = #string // REVISAR TIPO DE DATO 
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "FrecuenciaMedicamento"
-* item[=].item[=].item[=].text = "Frecuencia (revisar tipo dato)"
+* item[=].item[=].item[=].text = "Frecuencia de ingesta Medicamento"
 
-* item[=].item[=].item[+].type = #quantity // REVISAR TIPO DE DATO 
+* item[=].item[=].item[+].type = #string // REVISAR TIPO DE DATO 
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "duracionTratamiento"
-* item[=].item[=].item[=].text = "Duración (revisar tipo dato)"
+* item[=].item[=].item[=].text = "Duración del tratamiento"
 
 * item[=].item[=].item[+].type = #string
 * item[=].item[=].item[=].required = true

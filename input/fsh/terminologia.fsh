@@ -1,4 +1,4 @@
-CodeSystem:  SexoNaCS
+/*CodeSystem:  SexoNaCS
 Id:          SexoNaCS
 Title:       "CS - Códigos para definir el Sexo de nacimiento del Paciente"
 Description: "Terminología de Sexo definido por la Norma Técnica 820"
@@ -25,7 +25,7 @@ Description:    "Códigos válidos de sexo a la hora de nacer definidos en la no
 
 * codes from system SexoNaCS
 
-
+*/
 CodeSystem:  ComportamientoSuicidaCS
 Id:          ComportamientoSuicidaCS
 Title:       "CS - Códigos para definir el tipo de comportamiento suicida que ha tenido el paciente"

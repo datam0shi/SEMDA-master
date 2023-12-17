@@ -59,7 +59,7 @@ Usage: #example
 * item[=].item[=].item[0].type = #string
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "motivoConsulta"
-* item[=].item[=].item[=].text = "Motivo consulta"
+* item[=].item[=].item[=].text = "Motivo Consulta"
 
 * item[=].item[=].item[+].type = #string
 * item[=].item[=].item[=].required = true
@@ -70,12 +70,12 @@ Usage: #example
 * item[=].item[=].item[=].answerValueSet = "http://example.org/ValueSet/ComportamientoSuicidaVS"
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "comportamientoSuicida"
-* item[=].item[=].item[=].text = "Comportamiento suicida"
+* item[=].item[=].item[=].text = "Comportamiento Suicida"
 
 * item[=].item[=].item[+].type = #string
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "descripcionComportamiento"
-* item[=].item[=].item[=].text = "Cómo y donde" //IDENTAR DENTRO DE SUICIDIO
+* item[=].item[=].item[=].text = "Cómo y dónde" //IDENTAR DENTRO DE SUICIDIO
 * item[=].item[=].item[=].enableWhen.question = "comportamientoSuicida" 
 * item[=].item[=].item[=].enableWhen.operator = #!=
 * item[=].item[=].item[=].enableWhen.answerCoding.code = #CS0
@@ -85,22 +85,22 @@ Usage: #example
 * item[=].item[=].item[+].type = #string
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "atencionPrevia"
-* item[=].item[=].item[=].text = "Atenciones previas de salud mental"
+* item[=].item[=].item[=].text = "Atenciones previas de Salud Mental"
 
 * item[=].item[=].item[+].type = #string
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "diagnosticoPrevio"
-* item[=].item[=].item[=].text = "Diagnóstico previo" 
+* item[=].item[=].item[=].text = "Diagnóstico Previo" 
 
 * item[=].item[=].item[+].type = #string
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "antecedentesMED"
-* item[=].item[=].item[=].text = "Antecedentes médicos" //LINKEAR?
+* item[=].item[=].item[=].text = "Antecedentes Médicos" //LINKEAR?
 
 * item[=].item[=].item[+].type = #string
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "antecedentesFamiliaresPSI"
-* item[=].item[=].item[=].text = "Antecedentes familiares de salud mental"
+* item[=].item[=].item[=].text = "Antecedentes Familiares de Salud Mental"
 
 //  DIAGNOSTICO PSICOLÓGICO //
 
@@ -112,13 +112,13 @@ Usage: #example
 * item[=].item[=].item[0].type = #string
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "hipotesisDiagnostica"
-* item[=].item[=].item[=].text = "Hipótesis diagnóstica"
+* item[=].item[=].item[=].text = "Hipótesis Diagnóstica"
 
 * item[=].item[=].item[+].type = #choice 
 * item[=].item[=].item[=].answerValueSet = "http://example.org/ValueSet/ResultadoIntervencionVS"
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "resultadoIntervencion"
-* item[=].item[=].item[=].text = "Resultado intervención"
+* item[=].item[=].item[=].text = "Resultado Intervención"
 
 
 //  CONTROL PSICOLÓGICO  // DEBERIA IR IDENTADO? PQ REFIERE A NOMBRE OTRA VEZ
@@ -134,7 +134,7 @@ Usage: #example
 * item[=].item[=].item[0].type = #string
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "estadoEmocional"
-* item[=].item[=].item[=].text = "Estado emocional"
+* item[=].item[=].item[=].text = "Estado Emocional"
 
 * item[=].item[=].item[+].type = #string
 * item[=].item[=].item[=].required = true
